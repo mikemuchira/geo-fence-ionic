@@ -1,0 +1,151 @@
+<ion-header>
+  <ion-navbar color="primary">
+      <ion-title>
+        <ion-icon name="home" item-start></ion-icon>
+        Geo-Market 
+      </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-slides pager>
+        <ion-slide *ngFor="let slide of slides">
+            <ion-toolbar>
+              Android Phones
+            </ion-toolbar>
+          <img [src]="slide.image" class="slide-image"/>
+          <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+          <p [innerHTML]="slide.version"></p>
+          <p [innerHTML]="slide.camera"></p>
+          <p [innerHTML]="slide.ram"></p>
+          <p [innerHTML]="slide.storage"></p>
+          <ion-icon [name]="slide.icon" [color]="slide.icon_color" item-start [innerHTML]="slide.price"></ion-icon>
+
+        <ion-toolbar>
+            <ion-row>
+                <ion-col>
+                  <button ion-button clear small color="secondary" icon-start>
+                    <ion-icon name='bookmark'></ion-icon>
+                    save 
+                  </button>
+                </ion-col>
+                <ion-col text-right>
+                  <button ion-button clear small color="danger" icon-start>
+                    <ion-icon name='share-alt'></ion-icon>
+                    Share
+                  </button>
+                </ion-col>
+                <ion-col text-center>
+                  <button ion-button clear small color="primary" icon-start>
+                    <ion-icon name='cart'></ion-icon>
+                    add to cart
+                  </button>
+                </ion-col>
+              </ion-row>
+        </ion-toolbar>
+        </ion-slide>
+      </ion-slides>
+
+  <ion-card>
+    <img src="assets/imgs/lg.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        Android phone
+      </ion-card-title>
+      <p>
+        Android version 7.0 naughat<br>
+        8 & 5 MP front & rear camera<br>
+        <ion-icon name="pricetags" item-start></ion-icon> 10500 /= only
+      </p>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="secondary" icon-start>
+          <ion-icon name='bookmark'></ion-icon>
+          save 
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="primary" icon-start>
+          <ion-icon name='cart'></ion-icon>
+          add to cart
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/macbook.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        Laptop
+      </ion-card-title>
+      <p>
+        MacBook OS X Lion<br>
+        500GB HDD & 4Gb RAM<br>
+        <ion-icon name="pricetags" item-start></ion-icon> 135000 /= only
+      </p>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="secondary" icon-start>
+          <ion-icon name='bookmark'></ion-icon>
+          save 
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="primary" icon-start>
+          <ion-icon name='cart'></ion-icon>
+          add to cart
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/android.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        Android phone
+      </ion-card-title>
+      <p>
+        Android version 6.0 KitKat<br>
+        5 & 3 MP front & rear camera<br>
+        <ion-icon name="pricetags" item-start></ion-icon> 9500 /= only
+      </p>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="secondary" icon-start>
+          <ion-icon name='bookmark'></ion-icon>
+          save 
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="primary" icon-start>
+          <ion-icon name='cart'></ion-icon>
+          add to cart
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

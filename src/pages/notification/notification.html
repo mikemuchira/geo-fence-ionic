@@ -1,0 +1,59 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+      <ion-title>
+        <ion-icon name="notifications" item-start></ion-icon>
+        Notifications
+      </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list inset>
+    <ion-list-header>
+      Account notifications
+    </ion-list-header>
+    <button ion-item>
+      <ion-icon name="cart" item-start></ion-icon>My shopping cart
+      <button ion-button clear item-end>view</button>
+    </button>
+    <button ion-item>
+      <ion-icon name="bookmark" item-start></ion-icon>Saved Items
+      <button ion-button clear item-end>view</button>
+    </button>
+    <button ion-item>
+      <ion-icon name="information-circle" item-start></ion-icon>Account Status
+      <button ion-button clear item-end>view</button>
+    </button>
+    <button ion-item>
+      <ion-icon name="list" item-start></ion-icon>Subscriptions Alerts
+      <button ion-button clear item-end>view</button>
+    </button>
+  </ion-list>
+
+  <ion-list inset *ngIf="notify">
+    <ion-list-header>
+      Newsletters
+    </ion-list-header>
+    <button ion-item>
+      <ion-icon name="mail" item-start></ion-icon>Unread Newsletters
+      <button ion-button clear item-end (click)="launchNewslettersPage()">view</button>
+    </button>
+    <button ion-item>
+      <ion-icon name="mail-open" item-start></ion-icon>Read Newsletters
+      <button ion-button clear item-end (click)="launchNewslettersPage()">view</button>
+    </button>
+    <button ion-item>
+      <ion-icon name="exit" item-start></ion-icon>Ignored Newsletters
+      <button ion-button clear item-end (click)="launchNewslettersPage()">view</button>
+    </button>
+  </ion-list>
+  <ion-list inset *ngIf="no_notify">
+  <ion-list-header>
+    Newsletters
+  </ion-list-header>
+  not available
+  </ion-list>
+</ion-content>

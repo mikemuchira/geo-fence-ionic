@@ -1,0 +1,62 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+      <ion-title>
+        <ion-icon name="settings" item-start></ion-icon> Settings
+      </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-toolbar class="account">
+    <ion-icon name="lock" item-start></ion-icon> My Account
+  </ion-toolbar>
+
+  <ion-row>
+    <ion-col>
+      E-Mail : 
+    </ion-col>
+    <ion-col>
+      <ion-input type="email" value="myemail@yahoo.com"></ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+      <ion-col>
+        Username : 
+      </ion-col>
+      <ion-col>
+        <ion-input type="text" value="myusername"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+          Password : 
+        </ion-col>
+        <ion-col>
+          <ion-input type="password" value="passkey"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col>
+            <button ion-button block> Save Changes</button>
+          </ion-col>
+        </ion-row>
+        
+  <ion-toolbar>
+    <ion-icon name="build" item-start></ion-icon> Configurations
+  </ion-toolbar>
+  <ion-item>
+    <ion-label>Location settings</ion-label> <ion-toggle end></ion-toggle>
+  </ion-item>
+  <ion-item>
+      <ion-label>Allow Notification</ion-label> <ion-toggle [(ngModel)]="notify" end></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <h2 *ngIf="notify">It works</h2>
+  </ion-item>
+</ion-content>
