@@ -40,6 +40,7 @@ export class LocationPage {
         center: mylocation
       });
     });
+    
     let watch = this.geolocation.watchPosition();
     watch.subscribe((data) => {
       this.deleteMarkers();
