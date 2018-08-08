@@ -15,7 +15,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ActivitiesPage {
 
-  public notify:boolean = true;
 
   constructor(public navCtrl: NavController, public navparams: NavParams) {}
 

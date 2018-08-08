@@ -14,6 +14,7 @@ import { NewslettersPage } from '../newsletters/newsletters';
   selector: 'page-notification',
   templateUrl: 'notification.html',
 })
+
 export class NotificationPage {
 
   public notify:boolean = true;

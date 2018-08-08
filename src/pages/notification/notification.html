@@ -33,7 +33,13 @@
     </button>
   </ion-list>
 
-  <ion-list inset *ngIf="notify">
+  <ion-list inset>
+    <ion-item>
+      <ion-label>Allow Notification</ion-label> <ion-toggle [(ngModel)]="notify" end></ion-toggle>
+    </ion-item>
+  </ion-list>
+  
+  <ion-list inset *ngIf="notify; else nonotify">
     <ion-list-header>
       Newsletters
     </ion-list-header>
@@ -50,10 +56,10 @@
       <button ion-button clear item-end (click)="launchNewslettersPage()">view</button>
     </button>
   </ion-list>
-  <ion-list inset *ngIf="no_notify">
+  <ion-list inset *ngIf="notify==false">
   <ion-list-header>
     Newsletters
   </ion-list-header>
-  not available
+  Not Available. please turn on notifications.
   </ion-list>
 </ion-content>
